@@ -17,7 +17,7 @@ from tests.helpers import path_from_project_root, recreate_path, print_result_ex
 import inspect
 import glob
 
-vcr = VCR(decode_compressed_response=True, record_mode="new_episodes")
+vcr = VCR(decode_compressed_response=True)
 
 
 class AutodeletePhotosTestCase(TestCase):
